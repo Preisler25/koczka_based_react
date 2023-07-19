@@ -3,7 +3,7 @@ const Post = ({ post }) => {
     return (
         <div className="post-container">
             <h2>{title}</h2>
-            <div>{body}</div>
+            <div className="post-body">{body}</div>
         </div>
     );
 }
