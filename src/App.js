@@ -29,6 +29,7 @@ import getPost from './constants/post';
 
 
 //main app
+
 function App() {
   let openPost = () =>{
     setIsOpen(!isOpen)
@@ -41,11 +42,8 @@ function App() {
   let pageState = null;
 
   if (isOpen) {
-    console.log("open");
     pageState = OpenPost(openPost)
-    console.log(pageState);
   }
-
   return (
     <div className="App">
       {Navbar("Koczka Based  v2.0")}
