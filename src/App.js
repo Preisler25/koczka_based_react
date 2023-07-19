@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 //inporting css
 import './App.css';
 
@@ -16,21 +18,32 @@ import './components/post/element/style.Post.css'
 import PostList from './components/post/list/PostList';
 import './components/post/list/style.PostList.css'
 
-const posts = [
-  { title: "Title 1", body: "Body 1" },
-  { title: "Title 2", body: "Body 2" },
-  { title: "Title 3", body: "Body 3" },
-  { title: "Title 4", body: <h1>Alma</h1> },
-];
+//Open Post
+import OpenPost from './components/post/open/OpenPost';
+import './components/post/open/style.OpenPost.css'
+
+//importing posts elements list
+import posts from './constants/post';
+
+
+
 
 //main app
 function App() {
+  
+  let openPost = () =>{
+    setIsOpen(!isOpen)
+  }
+
+  let [isOpen, setIsOpen] = useState(false);
+  let postState = PostList({ posts: posts })
+
+  if (isOpen) {postState = OpenPost()}else {postState = PostList({ posts: posts })}
+
   return (
     <div className="App">
       {Navbar()}
-      {PostList({ posts: posts})}
-
-
+      {postState}
     </div>
   );
 }

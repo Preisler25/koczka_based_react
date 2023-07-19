@@ -22,3 +22,35 @@
     margin-top: -5vh;
     margin-right: 25vw;
 }
+
+/* ---- Koczka Kép ---- */
+
+.pic_holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+.pic_holder img {
+    height: 30vh;
+    border-radius: 10px;
+    padding-bottom: 3vh;
+  }
+.pic_holder img:nth-child(1n) {
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+.pic_holder img:nth-child(2n) {
+    display: none;
+    width: 30vw;
+  }
+.pic_holder:hover img:nth-child(1n) {
+    display: none;
+  }
+.pic_holder:hover img:nth-child(2n) {
+    display: block;
+  }

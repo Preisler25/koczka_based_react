@@ -6,8 +6,10 @@
     align-items: center;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    height: 40vh;
+    height: 45vh;
     width: 30vw;
+    padding: 3vh;
+    font-size: 2vh;
 }
 
 .post-title{
@@ -24,5 +26,4 @@
     height: 100%;
     text-align: start;
     margin-top: 2vh;
-    margin-left: 3vh;
 }
