@@ -1,18 +1,37 @@
-//inporting css files
+//inporting css
 import './App.css';
+
+//Button
+import Button from './components/core/button/Button';
 import './components/core/button/style.Button.css'
+
+//Navbar
+import Navbar from './components/core/navbar/Navbar';
 import './components/core/navbar/style.Navbar.css'
 
-//importing components
-import Button from './components/core/button/Button';
-import Navbar from './components/core/navbar/Navbar';
+//Post
+import './components/post/element/style.Post.css'
+
+//Post List
+import PostList from './components/post/list/PostList';
+import './components/post/list/style.PostList.css'
 
 //main app
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      {Button({ children: 'Click me', onClick: () => alert('Hello'), className: 'btn' })}
+      {Navbar()}
+
+      {PostList({ 
+        posts: [
+          { title: "Title 1", body: "Body 1" },
+          { title: "Title 2", body: "Body 2" },
+          { title: "Title 3", body: "Body 3" },
+          { title: "Title 4", body: <h1>Alma</h1> },
+      ]
+      })}
+
+
     </div>
   );
 }

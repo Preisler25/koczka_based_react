@@ -1,0 +1,12 @@
+.post-container{
+    background-color: #C6AC8F;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 40vh;
+    width: 30vw;
+}
