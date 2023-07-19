@@ -1,8 +1,8 @@
-const Navbar = () => {
+const Navbar = (title) => {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <h1 className="navbar-title">Koczka Based  v2.0</h1>
+                <h1 className="navbar-title">{title}</h1>
             </div>
         </nav>
     ); 

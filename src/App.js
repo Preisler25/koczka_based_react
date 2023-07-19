@@ -23,27 +23,34 @@ import OpenPost from './components/post/open/OpenPost';
 import './components/post/open/style.OpenPost.css'
 
 //importing posts elements list
-import posts from './constants/post';
+import getPost from './constants/post';
 
 
 
 
 //main app
 function App() {
-  
   let openPost = () =>{
     setIsOpen(!isOpen)
   }
 
   let [isOpen, setIsOpen] = useState(false);
-  let postState = PostList({ posts: posts })
 
-  if (isOpen) {postState = OpenPost()}else {postState = PostList({ posts: posts })}
+  let posts = getPost(openPost);
+
+  let pageState = null;
+
+  if (isOpen) {
+    console.log("open");
+    pageState = OpenPost(openPost)
+    console.log(pageState);
+  }
 
   return (
     <div className="App">
-      {Navbar()}
-      {postState}
+      {Navbar("Koczka Based  v2.0")}
+      {PostList({ posts: posts })}
+      {pageState}
     </div>
   );
 }

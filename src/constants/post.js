@@ -20,7 +20,7 @@ let getPost = (oncFunc) => {
     },
     { 
       title: "A Klán Háború királya", 
-      body: <div><div>Mivel szerény és szögletes személy vagyok nem szoktam bevallani de én maga a Klán Háború királya vagyok, ki mindig nyer és jó tanácsaival csapatait is győzelemre vezeti!</div><Button children={"Kérj tanácsot!"} onclick={()=>oncFunc}></Button></div>
+      body: <div><div>Mivel szerény és szögletes személy vagyok nem szoktam bevallani de én maga a Klán Háború királya vagyok, ki mindig nyer és jó tanácsaival csapatait is győzelemre vezeti!</div><Button children={"Kérj tanácsot!"} onClick={oncFunc}></Button></div>
     },
   ];
 
