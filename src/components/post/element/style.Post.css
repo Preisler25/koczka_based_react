@@ -10,6 +10,7 @@
     height: 45vh;
     padding: 3vh;
     font-size: 2vh;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .post-title{

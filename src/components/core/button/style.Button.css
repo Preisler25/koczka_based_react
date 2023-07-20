@@ -4,21 +4,33 @@
   }
 
 .btn-tanacs{
+    transition: all 0.3s ease-in-out;
+    margin-top: 20%;
     background-color: #282c34;
     border-color: #282c34;
-    color: #fff;
-    font-size: 1.5rem;
+    color: #ecdac7;
+    height: 4vh;
+    font-size: 2vh;
     font-weight: 700;
-    padding: 0.5rem 1rem;
+    padding: 1vh;
     border-radius: 0.25rem;
     cursor: pointer;
-    transition: all 0.3s linear;
-    margin: 0.5rem 1rem 0.5rem 0;
     text-transform: capitalize;
     width: 100%;
-    display: block;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
   }
+
+.btn-tanacs:hover{
+    transform: scale(1.03);
+    background-color: #5E503F;
+    border-color: #5E503F;
+    color: #C6AC8F;
+  }
+
+.btn-tanacs:active{
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+  

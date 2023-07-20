@@ -1,5 +1,5 @@
 let quotationTime = () => {
-    fetch('https://koczkabased.lol/quotation?d=1')
+    fetch('https://koczkabased.lol/quotation')
       .then(response => {
         if (!response.ok) {
           throw new Error('Hiba a válaszban: ' + response.status);
