@@ -4,7 +4,6 @@ import { useState } from 'react';
 import './App.css';
 
 //Button
-import Button from './components/core/button/Button';
 import './components/core/button/style.Button.css'
 
 //Navbar
